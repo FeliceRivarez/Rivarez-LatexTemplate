@@ -69,14 +69,14 @@ rulesepcolor= \color{ red!20!green!20!blue!20}
 
 \begin{document}
 %-------！！！一定记得修改的地方！！！-------%
-\title{{\Huge{\textbf{实验报告常规模板}}}\\——Znamya自用模板}
-\author{Znamya\\2213218@mail.nankai.edu.cn}
+\title{{\Huge{\textbf{文档常规模板}}}\\——Znamya自用模板}
+\author{Znamya（aka. Felice Rivarez）\\FeliceRivarez@163.com\\ \url{https://github.com/FeliceRivarez}}
 \date{\today}
 %R：页面右边%L：页面左边%C：页面中间
 
 \fancyhead[L]{\leftmark}%\leftmark：表示“一级标题”
 
-\fancyhead[C]{实验报告}%\rightmark：表示“二级标题”
+\fancyhead[C]{文档}%\rightmark：表示“二级标题”
 
 \fancyhead[R]{\thepage}%\thepage:表示“页码”
 
@@ -84,11 +84,26 @@ rulesepcolor= \color{ red!20!green!20!blue!20}
 % \thispagestyle{empty} %放在这里没用！
 
 \begin{figure}[t]
-\vspace{-8cm}
+\vspace{-6cm}
+\begin{flushright}
+    \begin{tabular}{|l|l|}
+        编号&[ARTICLE]xxxxx\\
+        %article对应文章
+        %docs对应技术文档
+        %internal对应不公开文档
+        版本号&1.0.0\\
+        初版日期&2024.10.28\\
+    \end{tabular}
+\end{flushright}
+
 \begin{center}
-    \includegraphics[width=0.6\textwidth]{figs/NKU.png}
+    \includegraphics[width=1\textwidth]{title-images/埴安神袿姬keiki背景图.png}
 \end{center}
 \maketitle
+\begin{center}
+\scriptsize
+    封面插图：\url{https://www.pixiv.net/artworks/76703555}
+\end{center}
 \end{figure}
 \thispagestyle{empty} %去除第一页的页码
 
@@ -104,20 +119,21 @@ rulesepcolor= \color{ red!20!green!20!blue!20}
 \pagenumbering{roman}
 % \setcounter{page}{1}
 
-% \begin{center}
-%     \Huge\textbf{前言}
-% \end{center}~\
+\begin{center}
+    \Large\textbf{前言}
+\end{center}~\
 
-% 这是笔记的前言部分. 
-% ~\\
-% \begin{flushright}
-%     \begin{tabular}{c}
-%         Znamya\\
-%         \today
-%     \end{tabular}
-% \end{flushright}
+这是笔记的前言部分. 
+~\\
+\begin{flushright}
+    \begin{tabular}{c}
+        Znamya\\
+        于南开大学津南校区\\
+        \today
+    \end{tabular}
+\end{flushright}
 
-% \newpage
+\newpage
 \pagenumbering{Roman}
 \setcounter{page}{1}
 \tableofcontents
@@ -127,9 +143,9 @@ rulesepcolor= \color{ red!20!green!20!blue!20}
 
 % \chapter{章节标题}
 
-\begin{abstract}
-    本文为Znamya的自用实验报告模板（虽然本科需要写报告的日子也不多了？），虽说是实验报告模板，用于其它场合也是完全可以的。
-\end{abstract}
+% \begin{abstract}
+%     本文为Znamya的自用实验报告模板（虽然本科需要写报告的日子也不多了？），虽说是实验报告模板，用于其它场合也是完全可以的。
+% \end{abstract}
 
 \section{图片}
 \subsection{双图}

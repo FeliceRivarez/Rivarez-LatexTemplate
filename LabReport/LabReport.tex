@@ -1,8 +1,27 @@
 \documentclass[12pt, a4paper, oneside]{ctexbook}
+
+
+
+%----------各种package----------%
 \usepackage{amsmath, amsthm, amssymb, bm, graphicx, hyperref, mathrsfs}
+%%-----设置section样式-----%%
+\CTEXsetup[format={\Large\bfseries}]{section}                        %设置章标题字号为Large，居左
+\CTEXsetup[number={\chinese{section}}]{section}                      %section形式改为一,二,三,..
+ 
+\CTEXsetup[name={（,）}]{subsection}                                 
+\CTEXsetup[number={\chinese{subsection}}]{subsection}                %subsection形式改为（一,二,三,...）
+                            
+\CTEXsetup[number=\arabic{subsubsection}]{subsubsection}    %subsubsection形式改为1，2，3，..
+%%-----设置section样式-END-----%%
+
+\usepackage{appendix} %附录
+%----------各种package-END----------%
+
+
+
 
 \title{{\Huge{\textbf{笔记本标题}}}\\——副标题}
-\author{Dylaaan}
+\author{Znamya}
 \date{\today}
 \linespread{1.5}
 \newtheorem{theorem}{定理}[section]
@@ -27,7 +46,7 @@
 ~\\
 \begin{flushright}
     \begin{tabular}{c}
-        Dylaaan\\
+        Znamya\\
         \today
     \end{tabular}
 \end{flushright}
@@ -42,10 +61,23 @@
 
 \chapter{章节标题}
 
-在这里可以输入笔记的内容. 
+在这里可以输入笔记的内容. English
+
 
 \section{小节标题}
 
 这是笔记的正文部分. 
 
+\bibliography{mylib}
+
+
+
+
+\begin{appendices}
+\CTEXsetup[number=\Alph{section}]{section} 
+\section{xxx}
+附录内容
+\section{xxx}
+...
+\end{appendices}
 \end{document}
